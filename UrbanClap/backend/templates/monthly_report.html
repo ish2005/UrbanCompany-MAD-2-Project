@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #2196F3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 12px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .stats {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+        }
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Monthly Report</h1>
+    </div>
+    
+    <div class="content">
+        <h2>Hello {{ username }},</h2>
+        <p>Here's your monthly report for {{ month }} {{ year }}.</p>
+        
+        <div class="stats">
+            <h3>Your Activity Summary</h3>
+            <div class="stat-item">
+                <span>Total Service Requests:</span>
+                <span>{{ total_requests }}</span>
+            </div>
+            <div class="stat-item">
+                <span>Completed Services:</span>
+                <span>{{ completed_services }}</span>
+            </div>
+            <div class="stat-item">
+                <span>Pending Services:</span>
+                <span>{{ pending_services }}</span>
+            </div>
+            <div class="stat-item">
+                <span>Average Rating:</span>
+                <span>{{ average_rating }}/5</span>
+            </div>
+        </div>
+        
+        <p>Thank you for being a valued customer of UrbanClap!</p>
+        
+        <a href="http://localhost:5173/dashboard" class="button">View Full Report</a>
+    </div>
+    
+    <div class="footer">
+        <p>This is an automated message from UrbanClap. Please do not reply to this email.</p>
+    </div>
+</body>
+</html> 
