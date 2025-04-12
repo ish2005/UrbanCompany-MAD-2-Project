@@ -81,7 +81,7 @@ redis-server
 ### 2️⃣ Start MailHog
 Start MailHog to capture email notifications:
 ```sh
-mailhog
+MailHog
 ```
 
 ### 3️⃣ Backend Setup
